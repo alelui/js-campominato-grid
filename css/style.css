@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .clearfix:after{
     content: '';
     display: table;
@@ -13,11 +18,29 @@
 }
 
 
-/* *** HEADER *** */
+.container{
+    width: 700px;
+    height: 700px;
+    margin: 50px auto auto ;
+    border: 2px solid white;
+    background-color: darkslateblue;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/* *** MAIN *** */
-
-/* *** FOOTER *** */
-
-/* *** DEBUG *** */
+.cubox-easy{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid white;
+}
+.cubox-hard{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid white;
+}
+.cubox-insane{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid white;
+}
 
