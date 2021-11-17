@@ -32,14 +32,25 @@ switch (diff){
 
 
 let items ='';
+
 for (let i = 1; i <= diff; i++){
 
     items += `
     <div id="cubox-${word}"class="cubox">${i}</div>
     ` 
 }
-console.log(items);
 const easyBox = document.querySelector('.container');
 easyBox.innerHTML = items;
+
+// const item = document.getElementsByClassName('cubox');
+// console.log(item);
+
+// const item = document.querySelector('.cubox');
+// console.log(item);
+// item.addEventListener('click', function(){
+//     item.classList.add('active')
+// });
+
+
 
 
