@@ -23,24 +23,33 @@ body{
     height: 700px;
     margin: 50px auto auto ;
     border: 2px solid white;
-    background-color: darkslateblue;
+    background-color: #80fed5;
     display: flex;
     flex-wrap: wrap;
+}
+
+.cubox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
 }
 
 #cubox-easy{
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid white;
 }
 #cubox-hard{
     width: calc(100% / 9);
     height: calc(100% / 9);
-    border: 1px solid white;
 }
 #cubox-insane{
     width: calc(100% / 7);
     height: calc(100% / 7);
-    border: 1px solid white;
+}
+
+.active{
+    background-color: #6694ee;
+    color: white;
 }
 

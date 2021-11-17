@@ -8,11 +8,8 @@
 
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
-// const difficults = [100, 81, 49];
 
-// console.log(difficults[0]);
-
-let diff = prompt('iserisci livello');
+let diff = prompt('iserisci livello tra "easy" "hard" "insane"');
 let word;
 
 switch (diff){
@@ -29,15 +26,16 @@ switch (diff){
         word = 'insane';
         break;
     default:
-        alert('RICARICARE LA PAGINA E INSERIRE UN LIVELLO VALIDO');
+        alert('RICARICARE LA PAGINA ED INSERIRE UN LIVELLO VALIDO');
+        diff = 0;
 }
 
 
 let items ='';
-for (let i = 0; i < diff; i++){
+for (let i = 1; i <= diff; i++){
 
     items += `
-    <div id="cubox-${word}"></div>
+    <div id="cubox-${word}"class="cubox">${i}</div>
     ` 
 }
 console.log(items);
