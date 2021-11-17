@@ -29,6 +29,7 @@ switch (diff){
         word = 'insane';
         break;
     default:
+        alert('RICARICARE LA PAGINA E INSERIRE UN LIVELLO VALIDO');
 }
 
 
