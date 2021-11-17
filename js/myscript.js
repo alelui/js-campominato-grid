@@ -8,3 +8,39 @@
 
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
+// const difficults = [100, 81, 49];
+
+// console.log(difficults[0]);
+
+let diff = prompt('iserisci livello');
+let word;
+
+switch (diff){
+    case 'easy':
+        diff = 100;
+        word = 'easy';
+        break;
+    case 'hard':
+        diff = 81;
+        word = 'hard';
+        break;
+    case 'insane':
+        diff = 49;
+        word = 'insane';
+        break;
+    default:
+}
+
+
+let items ='';
+for (let i = 0; i < diff; i++){
+
+    items += `
+    <div id="cubox-${word}"></div>
+    ` 
+}
+console.log(items);
+const easyBox = document.querySelector('.container');
+easyBox.innerHTML = items;
+
+

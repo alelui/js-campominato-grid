@@ -28,17 +28,17 @@ body{
     flex-wrap: wrap;
 }
 
-.cubox-easy{
+#cubox-easy{
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid white;
 }
-.cubox-hard{
+#cubox-hard{
     width: calc(100% / 9);
     height: calc(100% / 9);
     border: 1px solid white;
 }
-.cubox-insane{
+#cubox-insane{
     width: calc(100% / 7);
     height: calc(100% / 7);
     border: 1px solid white;
